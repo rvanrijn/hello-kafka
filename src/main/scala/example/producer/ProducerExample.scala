@@ -3,7 +3,7 @@ package example.producer
 object ProducerExample {
   def main(args: Array[String]): Unit = {
     val topicName =
-      if(args.length == 0) "jsonTopic"
+      if(args.length == 0) "TutorialTopic"
       else args(0)
 
     val strProducer = Producer[String](topicName)

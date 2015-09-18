@@ -3,7 +3,7 @@ package example.consumer
 object ConsumerStreamExample {
   def main(args: Array[String]): Unit = {
     val topicNames = if(args.length == 0) {
-      "jsonTopic"
+      "TutorialTopic"
     } else {
       args.head
     }

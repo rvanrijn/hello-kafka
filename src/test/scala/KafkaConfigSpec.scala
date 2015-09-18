@@ -6,11 +6,11 @@ class KafkaConfigSpec extends FunSuite {
 
   test("Consumer config should be read") {
     assert(config.getProperty("group.id") == "test-consumer-group")
-    assert(config.getProperty("zookeeper.connect") == "localhost:2181")
+    assert(config.getProperty("zookeeper.connect") == "127.0.0.1:2181")
   }
 
   test("example.producer.Producer config should be read") {
-    assert(config.getProperty("metadata.broker.list") == "localhost:9092")
+    assert(config.getProperty("metadata.broker.list") == "127.0.0.1:9092")
     assert(config.getProperty("serializer.class") == "kafka.serializer.StringEncoder")
     assert(config.getProperty("partitioner.class") == "example.producer.SimplePartitioner")
     assert(config.getProperty("request.required.acks") == "1")

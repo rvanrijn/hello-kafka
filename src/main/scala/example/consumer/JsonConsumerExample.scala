@@ -5,7 +5,7 @@ import play.api.libs.json._
 object JsonConsumerExample {
   def main(args: Array[String]): Unit = {
     val topicName =
-      if(args.length == 0) "jsonTopic"
+      if(args.length == 0) "TutorialTopic"
       else args(0)
 
     val consumer = SingleTopicConsumer(topicName)

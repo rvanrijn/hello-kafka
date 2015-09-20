@@ -4,7 +4,7 @@ import scala.util.Random
 
 object ProducerStreamExample {
   def main(args: Array[String]): Unit = {
-    val strProducer = Producer[String]("TutorialTopic")
+    val strProducer = Producer[String]("test")
 
     val messageStream = Stream.continually{
       Random.alphanumeric.take(5).mkString
